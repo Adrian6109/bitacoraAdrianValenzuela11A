@@ -1,0 +1,55 @@
+header h1 {
+    color: #fff; /* El texto blanco hace que el neón resalte más */
+    text-shadow: 
+        0 0 5px #fff, 
+        0 0 10px #fff, 
+        0 0 20px #fefdff, /* Morado neón */
+        0 0 40px #f4f1f5, 
+        0 0 80px #fafafa;
+}
+/* 1. Estado normal del logo */
+footer img {
+    transition: transform 0.3s ease; /* Esto hace que el movimiento sea suave y no brusco */
+}
+
+/* 2. Estado cuando el mouse está encima (hover) */
+footer img:hover {
+    transform: scale(1.15); /* 1.15 significa que crece un 15% */
+    cursor: pointer;        /* Cambia el cursor a una manita */
+}
+.semana {
+    /* 1. Fondo y Espaciado */
+    background-color: #ffffff;
+    margin: 30px auto;
+    padding: 25px;
+    max-width: 800px;
+    
+    /* 2. Bordes y Esquinas */
+    border-radius: 15px; /* Esquinas suaves */
+    border-left: 8px solid #1be6e6; /* Línea decorativa cian a la izquierda */
+    
+    /* 3. Sombra Elegante (Box Shadow) */
+    /* x-offset, y-offset, blur, color con transparencia */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    
+    /* 4. Texto */
+    text-align: left;
+    color: #333; /* Gris oscuro para lectura cómoda */
+    
+    /* 5. Animación */
+    transition: all 0.3s ease; /* Suaviza el efecto hover */
+}
+
+/* Efecto al pasar el mouse */
+.semana:hover {
+    transform: translateY(-5px); /* La tarjeta "sube" un poco */
+    box-shadow: 0 15px 30px rgba(27, 7, 242, 0.2); /* Sombra más fuerte y azulada */
+    border-left: 8px solid #070af2; /* El borde cambia a azul oscuro */
+}
+
+/* Estilo para los títulos dentro de la tarjeta */
+.semana h2 {
+    margin-top: 0;
+    color: #070af2;
+    font-size: 1.5rem;
+}
